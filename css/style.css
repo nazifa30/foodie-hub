@@ -1,0 +1,64 @@
+body {
+    background-image:url('../images/bunner.jpg'); height: 100vh; background-size: cover; background-position: center;
+    font-family: 'Fira Sans'; /* Apply the font to the body */
+    margin: 0;
+    
+   
+
+
+}
+
+.navbar-custom {
+    background-color: #9B5446; /* Your desired color */
+
+}
+
+.overlay {
+    background-color: rgba(155, 84, 70, 0.7); /* Semi-transparent background */
+    backdrop-filter: blur(1px);
+    text-align: center; /* Center text */
+    padding: 20px; /* Padding */
+    color: white; /* Text color */
+    border-radius: 20px; /* Rounded corners */
+}
+  
+
+/* Media queries for responsive design */
+@media (max-width: 768px) {
+    .overlay h1 {
+        font-size: 1.5rem; /* Smaller font size */
+        padding: 0.5rem; /* Padding */
+    }
+    .overlay p {
+        font-size: 0.9rem; /* Smaller paragraph size */
+        padding: 0.5rem; /* Padding */
+    }
+}
+
+@media (max-width: 576px) {
+    .overlay h1 {
+        font-size: 1.25rem; /* Smaller font size */
+        padding: 0.25rem; /* Padding */
+    }
+    .overlay p {
+        font-size: 0.85rem; /* Smaller paragraph size */
+        padding: 0.25rem; /* Padding */
+    }
+}
+
+ 
+
+
+.card {
+    transition: transform 0.3s, box-shadow 0.3s;
+    background-color: rgba(155, 84, 70, 0.7);
+    backdrop-filter: blur(1px);
+    border: none;
+}
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 15px  black;
+}
+
+
+
