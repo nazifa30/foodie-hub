@@ -1,0 +1,193 @@
+body {
+    background-image: url('../images/bunner.jpg');
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+    font-family: 'Fira Sans';
+    /* Apply the font to the body */
+    margin: 0;
+
+
+
+
+}
+
+.navbar-custom {
+    background-color: #9B5446;
+    /* Your desired color */
+    z-index: 1000;
+    /* Ensure it stays on top */
+
+}
+
+.overlay {
+    background-color: rgba(155, 84, 70, 0.7);
+    /* Semi-transparent background */
+    backdrop-filter: blur(1px);
+    text-align: center;
+    /* Center text */
+    padding: 20px;
+    /* Padding */
+    color: white;
+    /* Text color */
+    border-radius: 20px;
+    /* Rounded corners */
+}
+
+
+/* Media queries for responsive design */
+@media (max-width: 768px) {
+    .overlay h1 {
+        font-size: 1.5rem;
+        /* Smaller font size */
+        padding: 0.5rem;
+        /* Padding */
+    }
+
+    .overlay p {
+        font-size: 0.9rem;
+        /* Smaller paragraph size */
+        padding: 0.5rem;
+        /* Padding */
+    }
+}
+
+@media (max-width: 576px) {
+    .overlay h1 {
+        font-size: 1.25rem;
+        /* Smaller font size */
+        padding: 0.25rem;
+        /* Padding */
+    }
+
+    .overlay p {
+        font-size: 0.85rem;
+        /* Smaller paragraph size */
+        padding: 0.25rem;
+        /* Padding */
+    }
+}
+
+
+
+
+.card {
+    transition: transform 0.3s, box-shadow 0.3s;
+    background-color: rgba(155, 84, 70, 0.7);
+    backdrop-filter: blur(1px);
+    border: none;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 15px black;
+}
+
+
+.custom-img {
+    height: 200px;
+    /* Fixed height for images */
+    object-fit: cover;
+    /* Ensures images cover the area */
+}
+
+.card {
+    height: 100%;
+    /* Ensures all cards expand to the same height */
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    /* Aligns the content vertically */
+    justify-content: space-between;
+    /* Space out content */
+}
+
+.form-container {
+    background-color: rgba(155, 84, 70, 0.3);
+    /* High transparency by default */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(20px);
+    transition: background-color 0.3s ease;
+    /* Transition effect */
+    max-width: 600px;
+    /* Maximum width for larger screens */
+    width: 100%;
+    /* Full width on small screens */
+}
+
+.form-container:hover {
+    background-color: rgba(155, 84, 70, 0.7);
+    /* Less transparent on hover */
+}
+
+h2 {
+    transition: color 0.3s ease;
+    /* Transition for the heading */
+}
+
+.form-container:hover h2 {
+    color: #ffc107;
+    /* Change heading color on hover */
+}
+
+@media (max-width: 576px) {
+    .form-container {
+        width: 600px;
+        /* Adjust width for smaller screens to match card width */
+        margin: 0 10px;
+        /* Add some margin */
+    }
+}
+
+
+
+.about-section {
+    padding: 10px 0;
+    background-color: rgba(155, 84, 70, 0.8);
+    /* Medium transparency */
+    color: white;
+    /* White text */
+}
+
+.about-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    /* Optional: adds rounded corners to the image */
+}
+
+
+.footer {
+    background-color: black;
+    /* Background color */
+    color: white;
+    /* Text color */
+    padding: 20px 0;
+}
+
+.social-icons a {
+    color: white;
+    /* Icon color */
+    margin: 0 15px;
+    /* Space between icons */
+    font-size: 1.5rem;
+    /* Icon size */
+}
+
+.footer h5 {
+    text-align: center;
+    /* Center headings */
+    margin-bottom: 20px;
+    /* Space below headings */
+}
+
+.footer p {
+    text-align: center;
+    /* Center paragraphs */
+    margin: 0;
+    /* Remove default margin */
+}
