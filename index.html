@@ -1,0 +1,710 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foodie Hub</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Ancizar+Serif:ital,wght@0,300..900;1,300..900&family=Bungee+Spice&family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Marcellus&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap"
+        rel="stylesheet">
+    <link rel="icon" href="images/favicon.ico">
+    <link href="css/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light d-flex align-items-center navbar-custom sticky-top">
+        <div class="container">
+            <a class="navbar-brand text-white" href="#">🥣 Foodie Hub</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link text-white px-3 py-2" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white px-3 py-2" href="#restaurants">Restaurants</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white px-3 py-2" href="#about">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white px-3 py-2" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="d-flex justify-content-center align-items-center" style="height: calc(100vh - 56px);">
+        <div class="overlay">
+            <h1 class="display-4">Welcome to Foodie Hub!</h1>
+            <p>Order your favorite meals instantly</p>
+        </div>
+    </div>
+
+    <div class="container my-5" id="restaurants">
+        <div class="row">
+            <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                <div class="card">
+                    <img src="images/burger.jpg" class="card-img-top custom-img" alt="Restaurant 1">
+                    <div class="card-body">
+                        <h5 class="card-title text-white">Star Burger</h5>
+                        <p class="card-text text-white">Star Burger is a vibrant restaurant known for its mouthwatering
+                            burgers.</p>
+                        <a href="#" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#burger">View Menu</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                <div class="card">
+                    <img src="images/pizza.jpg" class="card-img-top custom-img" alt="Restaurant 2">
+                    <div class="card-body">
+                        <h5 class="card-title text-white">London Pizza</h5>
+                        <p class="card-text text-white">London Pizza is a cozy eatery renowned for its authentic pizzas,
+                            offering a delightful blend of traditional flavors.</p>
+                        <a href="#" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#pizza">View Menu</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                <div class="card">
+                    <img src="images/barbecue.jpg" class="card-img-top custom-img" alt="Restaurant 3">
+                    <div class="card-body">
+                        <h5 class="card-title text-white">Grill Masters BBQ</h5>
+                        <p class="card-text text-white">Grill Masters BBQ is a vibrant restaurant that celebrates the
+                            joy of barbecue.</p>
+                        <a href="#" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#Barbecue">View
+                            Menu</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                <div class="card">
+                    <img src="images/vegetarian.jpg" class="card-img-top custom-img" alt="Restaurant 4">
+                    <div class="card-body">
+                        <h5 class="card-title text-white">Green Plate Café</h5>
+                        <p class="card-text text-white">Green Plate Café focuses on fresh, seasonal ingredients to
+                            create vibrant dishes.</p>
+                        <a href="#" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#veg">View Menu</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                <div class="card">
+                    <img src="images/dessert.jpg" class="card-img-top custom-img" alt="Restaurant 5">
+                    <div class="card-body">
+                        <h5 class="card-title text-white">Sweet Indulgence</h5>
+                        <p class="card-text text-white">Sweet Indulgence specializes in decadent treats and heavenly
+                            confections.</p>
+                        <a href="#" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#des">View Menu</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                <div class="card">
+                    <img src="images/juice.jpg" class="card-img-top custom-img" alt="Restaurant 6">
+                    <div class="card-body">
+                        <h5 class="card-title text-white">Fresh Squeeze Juice Bar</h5>
+                        <p class="card-text text-white">Fresh Squeeze Juice Bar serves vibrant, nutrient-packed
+                            beverages.</p>
+                        <a href="#" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#drink">View Menu</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section id="modal-section">
+        <div class="modal fade" id="burger" tabindex="-1" aria-labelledby="restaurantmenu" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Burgers 🍔</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row g-3">
+                            <div class="col-12 col-md-6">
+                                <div class="card h-100 rounded-4 shadow-lg">
+                                    <div class="card-body d-flex flex-column">
+                                        <h6 class="card-title text-white">Classic Cheeseburger</h6>
+                                        <p class="card-text flex-grow-1 text-white">
+                                            A juicy beef patty topped with melted cheddar cheese, lettuce, tomato,
+                                            pickles, and special sauce on a toasted bun.
+                                        </p>
+                                        <p><strong>Price:</strong> $15</p>
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <span class="badge bg-success">Available</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <div class="card h-100 rounded-4 shadow-lg">
+                                    <div class="card-body d-flex flex-column">
+                                        <h6 class="card-title text-white">BBQ Bacon Burger</h6>
+                                        <p class="card-text flex-grow-1 text-white">
+                                            A flavorful beef patty slathered in smoky barbecue sauce, topped with crispy
+                                            bacon, onion rings, and sharp cheddar cheese.
+                                        </p>
+                                        <p><strong>Price:</strong> $18</p>
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <span class="badge bg-success">Available</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <div class="card h-100 shadow-sm rounded-4 shadow-lg">
+                                    <div class="card-body d-flex flex-column">
+                                        <h6 class="card-title text-white">Mushroom Swiss Burger</h6>
+                                        <p class="card-text flex-grow-1 text-white">
+                                            A savory beef patty crowned with sautéed mushrooms and creamy Swiss cheese,
+                                            complemented by garlic aioli on a soft bun.
+                                        </p>
+                                        <p><strong>Price:</strong> $14</p>
+                                        <div
+                                            class="d-flex justify-content-between align-items-center custom-card-footer">
+                                            <span class="badge bg-danger">Sold Out</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <div class="card h-100 shadow-sm custom-card rounded-4 shadow-lg">
+                                    <div class="card-body d-flex flex-column">
+                                        <h6 class="card-title text-white">Veggie Burger</h6>
+                                        <p class="card-text flex-grow-1 text-white">
+                                            A hearty blend of black beans, quinoa, and spices, grilled to perfection and
+                                            served with fresh avocado, lettuce, and tomato on a whole grain bun.
+                                        </p>
+                                        <p><strong>Price:</strong> $14</p>
+                                        <div
+                                            class="d-flex justify-content-between align-items-center custom-card-footer">
+                                            <span class="badge bg-danger">Sold Out</span>
+                                            <button class="btn btn-outline-light btn-sm btn-add-cart"
+                                                title="Add to cart">
+                                                <i class="fa-solid fa-cart-shopping fa-lg"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+        <div class="modal fade" id="pizza" tabindex="-1" aria-labelledby="restaurantmenu" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Pizza 🍕</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row g-3">
+                            <div class="col-12 col-md-6">
+                                <div class="card h-100 rounded-4 shadow-lg">
+                                    <div class="card-body d-flex flex-column">
+                                        <h6 class="card-title text-white">Margherita Pizza</h6>
+                                        <p class="card-text flex-grow-1 text-white">
+                                            A classic Italian pizza topped with fresh mozzarella, tomatoes, basil, and a
+                                            drizzle of olive oil.
+                                        </p>
+                                        <p><strong>Price:</strong> $15</p>
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <span class="badge bg-success">Available</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <div class="card h-100 rounded-4 shadow-lg">
+                                    <div class="card-body d-flex flex-column">
+                                        <h6 class="card-title text-white">Pepperoni Pizza</h6>
+                                        <p class="card-text flex-grow-1 text-white">
+                                            A popular choice featuring a tomato base topped with mozzarella cheese and
+                                            spicy pepperoni slices.
+                                        </p>
+                                        <p><strong>Price:</strong> $18</p>
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <span class="badge bg-success">Available</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <div class="card h-100 shadow-sm rounded-4 shadow-lg">
+                                    <div class="card-body d-flex flex-column">
+                                        <h6 class="card-title text-white">Chicken Pizza</h6>
+                                        <p class="card-text flex-grow-1 text-white">
+                                            A flavorful pizza with barbecue sauce, grilled chicken, red onions, and
+                                            cilantro, finished with mozzarella cheese.
+
+
+                                        </p>
+                                        <p><strong>Price:</strong> $14</p>
+                                        <div
+                                            class="d-flex justify-content-between align-items-center custom-card-footer">
+                                            <span class="badge bg-danger">Sold Out</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <div class="card h-100 shadow-sm custom-card rounded-4 shadow-lg">
+                                    <div class="card-body d-flex flex-column">
+                                        <h6 class="card-title text-white"> Supreme Pizza</h6>
+                                        <p class="card-text flex-grow-1 text-white">
+                                            A colorful combination of bell peppers, onions, mushrooms, olives, and
+                                            spinach on a rich tomato sauce base.
+                                        </p>
+                                        <p><strong>Price:</strong> $14</p>
+                                        <div
+                                            class="d-flex justify-content-between align-items-center custom-card-footer">
+                                            <span class="badge bg-danger">Sold Out</span>
+                                            <button class="btn btn-outline-light btn-sm btn-add-cart"
+                                                title="Add to cart">
+                                                <i class="fa-solid fa-cart-shopping fa-lg"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="Barbecue" tabindex="-1" aria-labelledby="restaurantmenu" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Barbecue 🍖</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row g-3">
+                            <div class="col-12 col-md-6">
+                                <div class="card h-100 rounded-4 shadow-lg">
+                                    <div class="card-body d-flex flex-column">
+                                        <h6 class="card-title text-white">Texas Brisket</h6>
+                                        <p class="card-text flex-grow-1 text-white">
+                                            Slow-smoked beef brisket seasoned with a simple rub, known for its tender
+                                            texture and smoky flavor.
+                                        </p>
+                                        <p><strong>Price:</strong> $15</p>
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <span class="badge bg-success">Available</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <div class="card h-100 rounded-4 shadow-lg">
+                                    <div class="card-body d-flex flex-column">
+                                        <h6 class="card-title text-white">Kansas City Ribs</h6>
+                                        <p class="card-text flex-grow-1 text-white">
+                                            Pork ribs coated in a thick, sweet barbecue sauce, often served with a side
+                                            of baked beans and coleslaw..
+                                        </p>
+                                        <p><strong>Price:</strong> $18</p>
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <span class="badge bg-success">Available</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <div class="card h-100 shadow-sm rounded-4 shadow-lg">
+                                    <div class="card-body d-flex flex-column">
+                                        <h6 class="card-title text-white">Carolina Pulled Pork</h6>
+                                        <p class="card-text flex-grow-1 text-white">
+                                            Slow-cooked pork shoulder shredded and tossed in a tangy vinegar-based
+                                            sauce, typically served on a bun.
+
+
+                                        </p>
+                                        <p><strong>Price:</strong> $14</p>
+                                        <div
+                                            class="d-flex justify-content-between align-items-center custom-card-footer">
+                                            <span class="badge bg-danger">Sold Out</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <div class="card h-100 shadow-sm custom-card rounded-4 shadow-lg">
+                                    <div class="card-body d-flex flex-column">
+                                        <h6 class="card-title text-white"> Memphis Style</h6>
+                                        <p class="card-text flex-grow-1 text-white">
+                                            A delicious blend of smoked pork, often served as pulled pork or ribs, with
+                                            a dry rub and a side of tangy sauce.
+                                        </p>
+                                        <p><strong>Price:</strong> $14</p>
+                                        <div
+                                            class="d-flex justify-content-between align-items-center custom-card-footer">
+                                            <span class="badge bg-danger">Sold Out</span>
+                                            <button class="btn btn-outline-light btn-sm btn-add-cart"
+                                                title="Add to cart">
+                                                <i class="fa-solid fa-cart-shopping fa-lg"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="modal fade" id="veg" tabindex="-1" aria-labelledby="restaurantmenu" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Types of Vegetarian Foods 🥗</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row g-3">
+                            <div class="col-12 col-md-6">
+                                <div class="card h-100 rounded-4 shadow-lg">
+                                    <div class="card-body d-flex flex-column">
+                                        <h6 class="card-title text-white">Vegetable Stir-Fry</h6>
+                                        <p class="card-text flex-grow-1 text-white">
+                                            A colorful mix of fresh vegetables sautéed in a savory sauce, often served
+                                            over rice or noodles.
+                                        </p>
+                                        <p><strong>Price:</strong> $15</p>
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <span class="badge bg-success">Available</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <div class="card h-100 rounded-4 shadow-lg">
+                                    <div class="card-body d-flex flex-column">
+                                        <h6 class="card-title text-white">Chickpea Salad</h6>
+                                        <p class="card-text flex-grow-1 text-white">
+                                            A refreshing salad made with chickpeas, cucumbers, tomatoes, red onion, and
+                                            a zesty lemon dressing.
+                                        </p>
+                                        <p><strong>Price:</strong> $18</p>
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <span class="badge bg-success">Available</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <div class="card h-100 shadow-sm rounded-4 shadow-lg">
+                                    <div class="card-body d-flex flex-column">
+                                        <h6 class="card-title text-white">Stuffed Bell Peppers</h6>
+                                        <p class="card-text flex-grow-1 text-white">
+                                            Bell peppers filled with a savory mixture of quinoa, black beans, corn, and
+                                            spices, baked until tender.</p>
+                                        <p><strong>Price:</strong> $14</p>
+                                        <div
+                                            class="d-flex justify-content-between align-items-center custom-card-footer">
+                                            <span class="badge bg-danger">Sold Out</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <div class="card h-100 shadow-sm custom-card rounded-4 shadow-lg">
+                                    <div class="card-body d-flex flex-column">
+                                        <h6 class="card-title text-white"> Mushroom Risotto</h6>
+                                        <p class="card-text flex-grow-1 text-white">
+                                            Creamy Arborio rice cooked slowly with mushrooms, vegetable broth, and
+                                            finished with Parmesan cheese and herbs.
+                                        </p>
+                                        <p><strong>Price:</strong> $14</p>
+                                        <div
+                                            class="d-flex justify-content-between align-items-center custom-card-footer">
+                                            <span class="badge bg-danger">Sold Out</span>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="des" tabindex="-1" aria-labelledby="restaurantmenu" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Types of Desserts 🍰</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row g-3">
+                            <div class="col-12 col-md-6">
+                                <div class="card h-100 rounded-4 shadow-lg">
+                                    <div class="card-body d-flex flex-column">
+                                        <h6 class="card-title text-white">Chocolate Lava Cake</h6>
+                                        <p class="card-text flex-grow-1 text-white">
+                                            A rich chocolate cake with a gooey molten center, often served warm with
+                                            vanilla ice cream.
+                                        </p>
+                                        <p><strong>Price:</strong> $15</p>
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <span class="badge bg-success">Available</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <div class="card h-100 rounded-4 shadow-lg">
+                                    <div class="card-body d-flex flex-column">
+                                        <h6 class="card-title text-white">Tiramisu</h6>
+                                        <p class="card-text flex-grow-1 text-white">
+                                            An Italian classic made with layers of coffee-soaked ladyfingers and
+                                            mascarpone cheese, dusted with cocoa powder.
+                                        </p>
+                                        <p><strong>Price:</strong> $18</p>
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <span class="badge bg-success">Available</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <div class="card h-100 shadow-sm rounded-4 shadow-lg">
+                                    <div class="card-body d-flex flex-column">
+                                        <h6 class="card-title text-white">Cheesecake</h6>
+                                        <p class="card-text flex-grow-1 text-white">
+                                            A creamy dessert with a graham cracker crust, available in various flavors
+                                            like classic, strawberry, or chocolate.</p>
+                                        <p><strong>Price:</strong> $14</p>
+                                        <div
+                                            class="d-flex justify-content-between align-items-center custom-card-footer">
+                                            <span class="badge bg-danger">Sold Out</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <div class="card h-100 shadow-sm custom-card rounded-4 shadow-lg">
+                                    <div class="card-body d-flex flex-column">
+                                        <h6 class="card-title text-white"> Panna Cotta</h6>
+                                        <p class="card-text flex-grow-1 text-white">
+                                            A silky Italian custard dessert made with cream, sugar, and gelatin,
+                                            typically served with a fruit sauce or caramel.
+                                        </p>
+                                        <p><strong>Price:</strong> $14</p>
+                                        <div
+                                            class="d-flex justify-content-between align-items-center custom-card-footer">
+                                            <span class="badge bg-danger">Sold Out</span>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="drink" tabindex="-1" aria-labelledby="restaurantmenu" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Types of Drinks 🍹</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row g-3">
+                            <div class="col-12 col-md-6">
+                                <div class="card h-100 rounded-4 shadow-lg">
+                                    <div class="card-body d-flex flex-column">
+                                        <h6 class="card-title text-white">Mojito</h6>
+                                        <p class="card-text flex-grow-1 text-white">
+                                            A refreshing cocktail made with fresh mint, lime juice, sugar, rum, and soda
+                                            water, perfect for warm weather.
+                                        </p>
+                                        <p><strong>Price:</strong> $15</p>
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <span class="badge bg-success">Available</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <div class="card h-100 rounded-4 shadow-lg">
+                                    <div class="card-body d-flex flex-column">
+                                        <h6 class="card-title text-white">Iced Coffee</h6>
+                                        <p class="card-text flex-grow-1 text-white">
+                                            Brewed coffee served chilled over ice, often sweetened and topped with milk
+                                            or cream.
+                                        </p>
+                                        <p><strong>Price:</strong> $18</p>
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <span class="badge bg-success">Available</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <div class="card h-100 shadow-sm rounded-4 shadow-lg">
+                                    <div class="card-body d-flex flex-column">
+                                        <h6 class="card-title text-white">Berry Smoothie</h6>
+                                        <p class="card-text flex-grow-1 text-white">
+                                            A nutritious blend of mixed berries, yogurt, and banana, blended until
+                                            smooth for a delicious and healthy treat.</p>
+                                        <p><strong>Price:</strong> $14</p>
+                                        <div
+                                            class="d-flex justify-content-between align-items-center custom-card-footer">
+                                            <span class="badge bg-danger">Sold Out</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <div class="card h-100 shadow-sm custom-card rounded-4 shadow-lg">
+                                    <div class="card-body d-flex flex-column">
+                                        <h6 class="card-title text-white">Lemonade</h6>
+                                        <p class="card-text flex-grow-1 text-white">
+                                            A classic summer drink made from freshly squeezed lemons, sugar, and water,
+                                            served cold with ice.
+                                        </p>
+                                        <p><strong>Price:</strong> $14</p>
+                                        <div
+                                            class="d-flex justify-content-between align-items-center custom-card-footer">
+                                            <span class="badge bg-danger">Sold Out</span>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <div class="container d-flex justify-content-center align-items-center vh-100">
+        <div class="form-container">
+            <h2 class="text-white text-center">Order Form</h2>
+            <form action="#" method="post">
+                <div class="mb-3">
+                    <label for="customer-name" class="form-label text-white">Customer Name</label>
+                    <input type="text" class="form-control" id="customer-name" name="customer-name" required>
+                </div>
+                <div class="mb-3">
+                    <label for="phone-number" class="form-label text-white">Phone Number</label>
+                    <input type="tel" class="form-control" id="phone-number" name="phone-number" required>
+                </div>
+                <div class="mb-3">
+                    <label for="restaurant" class="form-label text-white">Restaurant</label>
+                    <select class="form-select" id="restaurant" name="restaurant" required>
+                        <option value="">Select a restaurant</option>
+                        <option value="restaurant1">London pizza</option>
+                        <option value="restaurant2">Star burger</option>
+                        <option value="restaurant3">Green plate cafe</option>
+                    </select>
+                </div>
+                <fieldset class="mb-3">
+                    <legend class="text-white">Menu Items</legend>
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="item1" name="menu-items" value="item1">
+                        <label class="form-check-label text-white" for="item1">Item 1 - Quantity: <input type="number"
+                                min="1" value="1" style="width: 60px;" class="ms-2"></label>
+                    </div>
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="item2" name="menu-items" value="item2">
+                        <label class="form-check-label text-white" for="item2">Item 2 - Quantity: <input type="number"
+                                min="1" value="1" style="width: 60px;" class="ms-2"></label>
+                    </div>
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="item3" name="menu-items" value="item3">
+                        <label class="form-check-label text-white" for="item3">Item 3 - Quantity: <input type="number"
+                                min="1" value="1" style="width: 60px;" class="ms-2"></label>
+                    </div>
+                </fieldset>
+                <button type="submit" class="btn btn-light d-block mx-auto">Submit Order</button>
+            </form>
+        </div>
+    </div>
+
+
+    <div class="container about-section" id="about">
+        <div class="row align-items-center">
+            <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+                <img src="images/about.jpg" alt="Restaurant Image" class="about-image">
+            </div>
+            <div class="col-lg-6 col-md-12">
+                <h2>About Foodie Hub</h2>
+                <p>
+                    Welcome to Foodie Hub, your ultimate destination for delicious meals and unforgettable dining
+                    experiences!
+                    We pride ourselves on offering a diverse range of cuisines, carefully crafted by our talented chefs
+                    using the freshest ingredients. Whether you're looking for a quick bite or a lavish feast,
+                    Foodie Hub has something for everyone.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h5>Contact Information</h5>
+                    <p>Email: nazifa.ramaki3@gmai.com</p>
+                    <p>Phone: (123) 456-7890</p>
+                    <p>Address: Kabul:Afghanistan</p>
+                </div>
+                <div class="col-12">
+
+                    <div class="d-flex justify-content-center social-icons">
+                        <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="bi bi-twitter"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+        crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html> 
